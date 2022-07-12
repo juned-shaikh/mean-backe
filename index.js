@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors({origin:'http://localhost:4200'}));
 
-app.listen(port, ()=>console.log('server started at port 3000'))
+app.listen(port, ()=>console.log('server started at port '+port))
 
 
 app.use('/employees',routes)
