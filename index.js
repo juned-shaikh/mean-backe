@@ -13,7 +13,7 @@ app.use(cors({origin:'http://localhost:4200'}));
 app.listen(port, ()=>console.log('server started at port '+port))
 
 
-app.use('/employees',routes)
+app.use('/',routes)
 
 // app.use('/',(req,res)=>{
 //     res.json({message:"hello from juned"})
